@@ -1,6 +1,5 @@
-###################     
 # WIP Advanced Stream Stats     
-###################     
+   
 
 Database: **MongoDB**
 

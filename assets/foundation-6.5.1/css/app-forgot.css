@@ -1,0 +1,32 @@
+/**
+* --------------- CARD --------------------
+**/
+#card-center{
+    margin: auto;
+}
+
+.card{
+    width: 55%;
+    border-radius: 25px;
+}
+
+.card-divider{
+    justify-content: center;
+}
+/**
+* --------------- END CARD --------------------
+**/
+
+/**
+* ---------------- Mobile ------------------------------
+**/
+@media screen and (max-width: 639px) {
+    .card{
+        width: 100%;
+    }
+}
+/**
+* ---------------- End Mobile ------------------------------
+**/
+
+

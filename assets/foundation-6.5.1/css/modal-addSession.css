@@ -1,0 +1,21 @@
+
+
+
+.date-child-container{
+    width: 20%;
+    float: left;
+    margin-right: 10px;
+}
+
+#trials-container{
+    clear: both;
+    width: 20%;
+}
+
+#for-title{
+    margin: 0 !important;
+}
+
+#for-each-holder{
+    font-weight: bold;
+}

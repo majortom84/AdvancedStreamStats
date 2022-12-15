@@ -1,0 +1,520 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+/* 	overflow: hidden; */
+}
+
+#container{
+	width: 100%;
+	height: 100%;
+}
+
+/* -------------------- Login/Index View --------------------------------- */
+#login-container{
+	width: 450px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#login-btn{
+	width: 50%;
+}
+/* -------------------- End Login/Index View --------------------------------- */
+
+/* ------------------------- Grid DataBinder View ------------------------- */
+/*
+#dataBinder-container{
+	width: 75%;
+	margin: auto;
+}
+
+.binder{
+	position: relative;
+	height: 350px;
+	width: 75%;
+	border: gray 1px solid;
+	margin: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.binder img{
+	border-top-left-radius: 50% 50%;
+	border-top-right-radius: 50% 50%;
+	border-bottom-right-radius: 50% 50%;
+	border-bottom-left-radius: 50% 50%;
+	margin-top: 10px;
+}
+.binder-name{
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+#binder-search{
+	width: 45%;
+	margin: auto;
+}
+*/
+/* ------------------------- End Grid DataBinder View ------------------------- */
+
+/* ------------------------- End List DataBinder View ------------------------- */
+#databinder-list-contaner{
+	width: 75%;
+	margin: auto;
+}
+
+#binder-list-search{
+	width: 45%;
+	margin: auto;
+	margin-top: 20px;
+	display: inline-block;
+}
+
+#search-list-container{
+	width: 65%;
+    position: relative;
+    height: 60px;
+    margin: auto;
+}
+#search{
+	display: inline-block;
+    width: 73%;
+    float: right;
+    position: absolute;
+    right: 190px;
+}
+#binder-list-search{
+	margin-top: 20px;
+	width: 100%;
+}
+
+#button-container{
+	display: inline-block;
+    width: fit-content;
+    position: absolute;
+    right: 0;
+    top: 19px;
+}
+#edit-binders-btn{
+	
+}
+
+#list{
+/* 	border: rgba(232, 225, 225, 0.77) 1px solid; */
+	height: auto;
+	max-height: 89vh;
+	overflow: auto;
+	width: 65%;
+	margin: auto;
+	padding: 3px;
+}
+
+.binder-container{
+	width: 100%;
+	margin: auto;
+	border: rgba(232, 225, 225, 0.77) 1px solid;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 3px;
+	display: flex;
+}
+.binder-container:hover{
+	border: none;
+	box-shadow: 0 0 5px #999999;
+}
+.binder-left{
+	display: inline-block;
+}
+.binder-right{
+	display: inline-block;
+	flex-grow: 100;
+	margin-left: 10px;
+}
+.binder-image{
+	display: inline-block;
+}
+.binder-image img{
+	border-top-left-radius: 50% 50%;
+	border-top-right-radius: 50% 50%;
+	border-bottom-right-radius: 50% 50%;
+	border-bottom-left-radius: 50% 50%;
+}
+.binder-name{
+	display: inline-block;
+	margin-top: 60px;
+}
+
+/* Check box */
+.open-all-container{
+	position: relative;
+	height: 35px;
+	padding: 3px;
+	margin-top: 35px;
+}
+/* The container */
+.open-all-container-box{
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	width: fit-content;
+    float: right;
+}
+/* Hide the browser's default checkbox */
+.open-all-container-box .open-all {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+/* Create a custom checkbox */
+.open-all-checkmark {
+	position: absolute;
+	right: 20px;
+	height: 25px;
+	width: 25px;
+	background-color: #dfdede;
+	z-index: 50;
+}
+/* On mouse-over, add a grey background color */
+.open-all-container-box:hover input ~ .open-all-checkmark {
+	background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.open-all-container-box input:checked ~ .open-all-checkmark {
+	background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.open-all-checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.open-all-container-box input:checked ~ .open-all-checkmark:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.open-all-container-box .open-all-checkmark:after {
+	left: 9px;
+	top: 2px;
+	width: 9px;
+	height: 15px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+/* End Check box */
+
+/* ------------------------- End List DataBinder View ------------------------- */
+
+/* -------------------- Menu ------------------------------------------- */
+
+/* title bar is mobile */
+.title-bar{
+	background: rgba(255, 255, 255, 0);
+	padding: .8rem !important;
+}
+
+.top-bar{
+	padding: 0 !important;
+}
+
+.top-bar a{
+	height: 100%;
+	text-decoration: none;
+	position: relative;
+}
+
+/* top bar is desktop */
+.top-bar, .top-bar, .top-bar ul {
+	background: rgba(255, 255, 255, 0) !important; 
+}
+
+.menu li{
+	font-size: 120%;
+}
+
+.menu li:hover{
+	background-color: rgba(167, 205, 240, 0.39);  /* rgba(108, 166, 120, 0.57) = green  rgba(168, 250, 185, 0.57) = grey original */
+}
+
+.menu .active > a {
+	background-color: transparent;
+	border-bottom: 5px solid #000000;
+	color: rgba(6, 6, 6, 1);
+	text-transform: uppercase;
+	font-size: larger !important;
+}
+
+.container{
+	width: 90%;
+	margin: auto;
+}
+
+
+/* ------------------ button container hamburger ---------------------------- */
+.button_container {
+  position: absolute; /* change from fixed to absolute 01-29-2019 */
+  top: 1.2%; /* Position from top of page */
+  right: 2%; /* Position from right of page  (remove and it will move to left)*/
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity .25s ease;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+.button_container:hover {
+  opacity: .7;
+}
+/* ------------------ Active hamburger ---------------------------- */
+.button_container.active .top {
+  transform: translateY(11px) translateX(0) rotate(45deg);
+  background: #960808; /* 'X' color to close */
+}
+.button_container.active .middle {
+  opacity: 0;
+}
+.button_container.active .bottom {
+  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  background: #960808; /* 'X' color to close */
+}
+/* ------------------ End Active hamburger ---------------------------- */
+.button_container span {
+  background: #0d550a; /* 3 lines color */
+  border: none;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .35s ease;
+  cursor: pointer;
+}
+.button_container span:nth-of-type(2) {
+  top: 11px;
+}
+.button_container span:nth-of-type(3) {
+  top: 22px;
+}
+/* ------------------ End button container hamburger ---------------------------- */
+
+.overlay {
+  position: fixed;
+  background: #1a1a1a;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+  z-index: 5 !important;
+}
+.overlay.open {
+  opacity: .9;
+  visibility: visible;
+  height: 100%;
+}
+.overlay.open li {
+  animation: fadeInRight .5s ease forwards;
+  animation-delay: .35s;
+}
+.overlay.open li:nth-of-type(2) {
+  animation-delay: .4s;
+}
+.overlay.open li:nth-of-type(3) {
+  animation-delay: .45s;
+}
+.overlay.open li:nth-of-type(4) {
+  animation-delay: .50s;
+}
+.overlay nav {
+  position: relative;
+  height: 70%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+}
+.overlay ul li {
+  display: ;
+  height: 25%;
+  height: calc(100% / 3); /* Height of each li item calculated here */
+  min-height: 50px;
+  position: relative;
+  opacity: 0;
+}
+
+.overlay ul li a {
+  display: ;
+  position: relative;
+  color: #fd7014;
+  text-decoration: none;
+  overflow: hidden;
+}
+.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+  width: 100%;
+}
+.overlay ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: #FFF;
+  transition: .35s;
+}
+
+.overlay .active {
+  color: #ffffff;
+  text-shadow: 0px 0px 10px #bdbcbc;
+  font-weight: bold;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+} /* end keyframes */
+
+ul{
+	list-style-type: none;
+	margin: 0;
+}
+
+.menu .menu-text {
+	padding: 0 !important;
+}
+
+.logo{
+	font-size: 120%;
+	font-family: 'Rubik Mono One', sans-serif; 
+	z-index: 300;
+	top: .5em;
+	font-weight: 700;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.logo a{
+	color: black;
+	text-decoration: none;
+}
+.logo a span {
+	color: #0d550a;
+}
+
+
+@media screen and (max-width: 1446px) {
+	#search{
+		width: 59%;
+	}
+}
+@media screen and (max-width: 1120px) {
+	#databinder-list-contaner{
+		width: 100%;
+	}
+}
+
+
+/* -------- Remove other menu flicker ------------ */
+@media screen and (max-width: 39.9375em) {
+	#main-nav{
+		display: none !important;
+	}
+	.logo{
+		font-size: 100%;
+	}
+	.logo a{
+		color: #0d550a;
+		text-decoration: none;
+	}
+	.logo a span {
+	color: black;
+	}
+	
+	#login-container{
+		width: 95%;
+	}
+	
+	#search-list-container{
+		width: 100%;
+	}
+	
+	#search{
+		width: 62%;
+	}
+	
+	#binder-list-search{
+		width: 100%;
+	}
+	
+	#list{
+		height: auto;
+		max-height: 87vh;
+		overflow: auto;
+		width: 100%;
+		margin: auto;
+	}
+	
+} /* End (max-width: 39.9375em) for main nav display Mobile*/
+@media screen and (max-width: 639px) {
+	.cell{
+		margin: auto !important;
+	}
+	
+	.binder{
+		width: 100%;
+	}
+}
+
+/* Desktop below */
+@media screen and (min-width: 640px) {
+	.title-bar{
+		display: none !important;
+	}
+	#overlay{
+		display: none !important;
+	}
+} /* End (min-width: 640px) for title bar display Desktop*/
+
+/* -------- End Remove other menu flicker ------------ */
+/*--------------------- End Menu --------------------------------------- */

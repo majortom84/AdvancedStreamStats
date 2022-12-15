@@ -1,0 +1,139 @@
+.sideDivContainer{
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    left: -249px; /* left: -249px;  This is off screen*/
+    /* background-color: #da2121; */
+    overflow-x: hidden;
+    top: 60px;
+    transition: left 1s;
+    -webkit-transition: left 1s;
+}
+
+.sidenav {
+height: 93%;
+width: 250px;
+/*     position: fixed; */
+/*     z-index: 1; */
+/*     left: 0; */
+background-color: #111;
+overflow: scroll;
+/*     overflow-x: hidden; */
+/*     padding-top: 20px; */
+/*     top: 40px; */
+}
+
+.sidenav span {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 21px;
+color: #818181;
+display: block;
+border-bottom: 1px solid #54545445;
+}
+
+.sidenav label {
+font-size: 18px;
+color: #f0f0f0;
+}
+
+/*
+.sidenav a:hover {
+color: #f1f1f1;
+}
+*/
+
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+#openFilters{
+width: fit-content;
+display: inline-block;
+position: absolute;
+left: 0;
+top: 155px;
+}
+
+#openClose{
+width: 50px;
+height: 50px;
+display: inline-block;
+position: absolute;
+top: 0;
+right: 0;
+background-color: #111;
+font-size: 28px;
+border-radius: 0 50% 50% 0;
+}
+
+.filter{
+margin: 0 auto;
+width: 75%;
+}
+
+#clearFilterBTN{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#clearFilterBTN button{
+width: 70%;
+}
+
+.slide{
+left: -0px;
+}
+
+i {
+  border: solid white;
+border-width: 0 3px 3px 0;
+display: inline-block;
+padding: 10px;
+position: absolute;
+top: 25%;
+right: 45%;
+transition: transform .75s;
+-webkit-transition: transform .75s;
+}
+
+.right {
+transform: rotate(-45deg);
+-webkit-transform: rotate(-45deg);
+}
+
+i.left {
+/* To spin clockwise
+transform: rotate(135deg);
+-webkit-transform: rotate(135deg);
+*/
+transform: rotate(-225deg);
+-webkit-transform: rotate(-225deg);
+}
+
+@media screen and (max-width: 639px) {
+
+#databinder-list-contaner{
+  padding-top: 45px;
+}
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+#button-container{
+  margin-top: 19px;
+}
+
+#button-container button{
+  margin: unset;
+}
+

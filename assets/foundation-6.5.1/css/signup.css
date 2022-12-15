@@ -1,0 +1,70 @@
+/**
+* --------------- CARD --------------------
+**/
+#card-center{
+    margin: auto;
+}
+
+.card{
+    width: 55%;
+    border-radius: 25px;
+}
+
+.card-divider{
+    justify-content: center;
+}
+/**
+* --------------- END CARD --------------------
+**/
+
+
+/**
+* --------------- password --------------------
+**/
+#password{
+    margin-bottom: 0;
+}
+.password-text-data{
+    font-size: small;
+}
+
+.password-wrapper{
+    position: relative;
+}
+
+#togglePassword{
+position: absolute;
+    right: 25px; /* set to 25 because if they have a password manager like lastpass */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+/**
+* --------------- END password --------------------
+**/
+
+
+/**
+* --------------- terms --------------------
+**/
+#terms-container{
+    padding-top: 10px;
+}
+/**
+* --------------- END terms --------------------
+**/
+
+
+/**
+* ---------------- Mobile ------------------------------
+**/
+@media screen and (max-width: 639px) {
+    .card{
+        width: 100%;
+    }
+}
+/**
+* ---------------- End Mobile ------------------------------
+**/
+
+

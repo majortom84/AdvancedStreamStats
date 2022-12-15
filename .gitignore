@@ -1,0 +1,9 @@
+.htaccess
+*htaccess
+
+application/config/
+application/config/*
+/application/config/
+/application/config/*
+config/
+config/*

@@ -7,3 +7,5 @@ application/config/*
 /application/config/*
 config/
 config/*
+
+.gitignore

@@ -1,4 +1,11 @@
-# WIP Advanced Stream Stats     
+# (WIP) Advanced Stream Stats     
+
+# Progress
+1. Login (completed)
+2. Singup (completed)
+3. Dashboard
+4. Account
+5. Payment
    
 
 Database: **MongoDB**
